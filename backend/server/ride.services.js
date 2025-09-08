@@ -54,8 +54,6 @@ module.exports.createRide = async({
         fare:fare[vehicleType],
         otp:getotp(6)
     })
-      console.log("Database mein save hui nayi ride:", ride)
-
     return ride
 
 }

@@ -1,7 +1,6 @@
 const mapservices = require("../server/maps.service.js")
 const { validationResult} = require("express-validator")
 
-
 module.exports.getcoordinate = async(req , res)=>{
    const errors = validationResult(req)
 

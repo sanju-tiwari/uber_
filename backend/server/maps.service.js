@@ -1,5 +1,6 @@
 const axios = require("axios");
 const captionmodel = require("../models/caption.model.js")
+
 module.exports.getAddressCordinate = async (address)=>{
 const apikey = process.env.Google_API
 const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apikey}`;

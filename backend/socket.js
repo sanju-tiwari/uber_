@@ -6,7 +6,7 @@ let io;
 const initializeSocket = (server) => {
   io = SocketIO(server, {
     cors: {
-      origin: "*",
+      origin:"https://your-frontend.vercel.app",
       methods: ["GET", "POST"]
     }
   });
